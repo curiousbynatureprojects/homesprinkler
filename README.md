@@ -73,3 +73,13 @@ The system consists of the following primary components:
 - **Smart Control**: Some sprinkler systems can be integrated with smart home systems for remote control via mobile apps or voice commands.
 - **Weather Integration**: Advanced systems can use weather forecasts to adjust watering schedules based on temperature and precipitation predictions.
 
+NodeMCU to SSD1306 OLED wiring will remain the same as earlier for SPI:
+
+NodeMCU Pin (ESP8266)	OLED HAT Pin
+D7 (GPIO13)	MOSI (Master Out Slave In)
+D5 (GPIO14)	SCK (Serial Clock)
+D8 (GPIO15)	CS (Chip Select)
+D3 (GPIO0)	DC (Data/Command)
+D2 (GPIO4)	RESET (Reset)
+3.3V	VCC (Power)
+GND	GND

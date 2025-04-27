@@ -9,7 +9,7 @@
 #define OLED_CS      D8  // Chip Select pin
 
 // Create display object for SPI communication
-Adafruit_SSD1306 display(128, 64, &SPI, OLED_DC, OLED_RESET, OLED_CS);
+Adafruit_SSD1306 display(128, 32, &SPI, OLED_DC, OLED_RESET, OLED_CS);
 
 const char* name = "Daksh";  // Text to display
 int textWidth;               // To hold the width of the text
@@ -29,11 +29,11 @@ void setup() {
   display.clearDisplay();
 
   // Set text size and color
-  display.setTextSize(2);  // Change the text size to 2
+  display.setTextSize(1);  // Change the text size to 2
   display.setTextColor(SSD1306_WHITE);
 
   // Calculate the text width based on the text size
-  textWidth = strlen(name) * 12 * 2;  // (12px per character) * text size (2)
+  textWidth = strlen(name) * 12;  // (12px per character) * text size (2)
 }
 
 void loop() {
